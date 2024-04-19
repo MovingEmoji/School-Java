@@ -82,7 +82,11 @@ class InventoryManager {
                 String item = category.get(categoryName).get(itemId - 1);
                 category.get(categoryName).remove(item);
                 System.out.println("'" + item + "'" + "has been removed from " + categoryName);
+            } else {
+                System.out.println("Invaild category or number.");
             }
+        } else {
+            System.out.println("Invaild category or number.");
         }
     }
 
@@ -100,65 +104,144 @@ class InventoryManager {
 Inventory Management System
 --------------------------------
 1. Add Item
-2. Display Items
+2. Display Items by Category
 3. Remove Item
 4. Exit
 Please choose an option: 1
-Enter item to add: Apple
+Enter category: Food
+Enter item to add: apple
+'apple'has been added to Food
 --------------------------------
 Inventory Management System
 --------------------------------
 1. Add Item
-2. Display Items
+2. Display Items by Category
 3. Remove Item
 4. Exit
 Please choose an option: 2
-Shopping List:
-1. Apple
+Category: Food
+1. apple
 --------------------------------
 Inventory Management System
 --------------------------------
 1. Add Item
-2. Display Items
+2. Display Items by Category
 3. Remove Item
 4. Exit
 Please choose an option: 1
-Enter item to add: Banana
+Enter category: Furniture
+Enter item to add: bed
+'bed'has been added to Furniture
 --------------------------------
 Inventory Management System
 --------------------------------
 1. Add Item
-2. Display Items
+2. Display Items by Category
 3. Remove Item
 4. Exit
 Please choose an option: 2
-Shopping List:
-1. Apple
-2. Banana
+Category: Furniture
+1. bed
+Category: Food
+1. apple
 --------------------------------
 Inventory Management System
 --------------------------------
 1. Add Item
-2. Display Items
+2. Display Items by Category
+3. Remove Item
+4. Exit
+Please choose an option: 1
+Enter category: Food
+Enter item to add: banana
+'banana'has been added to Food
+--------------------------------
+Inventory Management System
+--------------------------------
+1. Add Item
+2. Display Items by Category
+3. Remove Item
+4. Exit
+Please choose an option: 1
+Enter category: Furniture
+Enter item to add: table
+'table'has been added to Furniture
+--------------------------------
+Inventory Management System
+--------------------------------
+1. Add Item
+2. Display Items by Category
+3. Remove Item
+4. Exit
+Please choose an option: 2
+Category: Furniture
+1. bed
+2. table
+Category: Food
+1. apple
+2. banana
+--------------------------------
+Inventory Management System
+--------------------------------
+1. Add Item
+2. Display Items by Category
 3. Remove Item
 4. Exit
 Please choose an option: 3
-Enter item to remove: 2
+Enter category: Food
+Enter item to remove: 1
+'apple'has been removed from Food
 --------------------------------
 Inventory Management System
 --------------------------------
 1. Add Item
-2. Display Items
+2. Display Items by Category
 3. Remove Item
 4. Exit
 Please choose an option: 2
-Shopping List:
-1. Apple
+Category: Furniture
+1. bed
+2. table
+Category: Food
+1. banana
 --------------------------------
 Inventory Management System
 --------------------------------
 1. Add Item
-2. Display Items
+2. Display Items by Category
+3. Remove Item
+4. Exit
+Please choose an option: 3
+Enter category: Foo
+Invaild category or number.
+--------------------------------
+Inventory Management System
+--------------------------------
+1. Add Item
+2. Display Items by Category
+3. Remove Item
+4. Exit
+Please choose an option: 3
+Enter category: Food
+Enter item to remove: 1
+'banana'has been removed from Food
+--------------------------------
+Inventory Management System
+--------------------------------
+1. Add Item
+2. Display Items by Category
+3. Remove Item
+4. Exit
+Please choose an option: 2
+Category: Furniture
+1. bed
+2. table
+Category: Food
+--------------------------------
+Inventory Management System
+--------------------------------
+1. Add Item
+2. Display Items by Category
 3. Remove Item
 4. Exit
 Please choose an option: 4
