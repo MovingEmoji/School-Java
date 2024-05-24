@@ -1,0 +1,2 @@
+例外名: java.util.ConcurrentModificationExceptio
+ArrayListはフェイルファスト・イテレータであり、仕様上１つのスレッドが反復処理中に別スレッドなどから変更を受けた場合直ちに例外をスローするような構造になっている
